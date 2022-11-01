@@ -1,5 +1,48 @@
 <!-- markdownlint-disable-file MD033 -->
 
+# SpaceCadetPinball-WASM
+
+All instructions regarding this fork go here.<br/>
+The original upstream instructions can be found [below](README.md#SpaceCadetPinball).
+
+## Setup
+
+### Requirements:
+
+* Emscripten SDK
+* CMake
+* A server to host the game
+* SDL2 libraries 
+  * More clear installation instructions will be provided at a later date, for some common OS configurations
+
+### Install the latest Emscripten SDK
+
+**Open a terminal and run the following from a root directory of your choice**
+* `git clone https://github.com/emscripten-core/emsdk.git`
+  * or `git clone git@github.com:emscripten-core/emsdk.git` if you use SSH
+* `cd emsdk/`
+* `./emsdk install latest`
+* `./emsdk activate latest`
+* Add the Emscripten tool suite to your path
+  * `source ./emsdk_env.sh`
+
+### Compile the game project
+
+**Open a terminal and run the following from a root directory of your choice**
+* `git clone https://github.com/markusbkk/SpaceCadetPinball-WASM.git`
+   * or `git clone git@github.com:markusbkk/SpaceCadetPinball-WASM.git` if you use SSH
+* `cd SpaceCadetPinball-WASM`
+* Copy the original game's assets (minus the **.exe**) into `game_resources/`
+* `emcmake cmake .`
+* `emmake make all`
+
+<br/>
+
+* Copy the contents of `bin/` to a server or run a local server such as [http-serve](https://www.npmjs.com/package/http-serve)
+* Open your favorite browser and direct it to `<serverURL>/SpaceCadetPinball.html`
+
+
+
 # SpaceCadetPinball
 
 ## Summary
