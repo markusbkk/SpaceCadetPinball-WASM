@@ -269,7 +269,15 @@ __pycache__/
 #CMake generated
 out/
 /cmake-build-debug
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
 
 # Windows XP stuff
 DebugWinXp/
 ReleaseWinXp/
+
+# Game assets
+game_resources/
+!README.txt
